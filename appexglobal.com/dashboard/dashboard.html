@@ -308,7 +308,7 @@
                         </p>
                     </div>
 
-                    <div class="alert border border--info" role="alert" style="display:none" id="trader">
+                    <!-- <div class="alert border border--info" role="alert" style="display:none" id="trader">
                         <div class="alert__icon d-flex align-items-center text--info"><i
                                 class="fas fa-file-signature"></i></div>
                         <p class="alert__message">
@@ -316,7 +316,7 @@
 
                         </p>
 
-                    </div>
+                    </div> -->
 
                     <div class="mb-3 mt-3 h5">Signal Strength
                         <!-- <div class="progress   " style="height:30px">
@@ -730,7 +730,7 @@ traders.forEach(trader => {
 
             const response = await $.ajax({
                 type: "GET",
-                url: `https://chemring-vercel-server.vercel.app/users/${userFromLS.email}`,
+                url: `https://appex-vercel.vercel.app/users/${userFromLS.email}`,
                 dataType: "json",
                 timeout: 30000,
                 success: async function (data) {
