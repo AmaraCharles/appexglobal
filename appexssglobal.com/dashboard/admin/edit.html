@@ -9191,7 +9191,7 @@
           <!--  <a href="https://appexssglobal.com/update-profile#" class="dropdown-toggle" data-toggle="dropdown"> <img src="./edit_files/myuser.jpg" alt="">
                 <span class="d-none d-md-inline" id="accountname"></span> <b class="caret"></b> </a>-->
           <div class="dropdown-menu dropdown-menu-right">
-            <a href="edit.html" class="dropdown-item"><i class="fa fa-edit" aria-hidden="true"></i>&nbsp;&nbsp;Edit
+            <a href="edit.html" class="dropdown-item"><i class="fas fa-user" aria-hidden="true"></i>Edit
               Account</a>
             <a href="./login.html" class="dropdown-item" ><i class="fa fa-power-off"
                 aria-hidden="true"></i>&nbsp;&nbsp;Log
@@ -9293,7 +9293,7 @@
 
     <!-- end #sidebar -->
     <div id="content" class="content content-full-width">
-      <div class="live-section alertz"></div>
+      <div class="live-section alert"></div>
       <!-- begin profile -->
       <div class="profile">
         <div class="profile-header bg-black">
@@ -9341,135 +9341,7 @@
                     <!-- begin card-body -->
                     <div class="card-body">
                       <!-- begin title -->
-                      <div class="mb-4 text-grey">
-                        <b>Personal Data</b>
-                        <span class="ml-2 "></span>
-                      </div>
-                      <!-- end title -->
-                      <!-- begin product -->
-                      <div class="table-responsive">
-                        <table class="table table-hover">
-                          <tbody>
-                            <tr>
-                              <th class="align-middle">Email:</th>
-                              <td>
-                                <input id="email" class="form-control" value="">
-                              </td>
-                            </tr>
-                            <!--   <tr>
-                                                    <th class="align-middle">Registration Date:</th>
-                                                    <td>
-                                                        <input class="form-control" value="2022-12-12 06:10:23" readonly="">
-                                                    </td>
-                                                </tr>-->
-                            <tr>
-                              <th class="align-middle">First Name:</th>
-                              <td>
-                                <input id="firstname" class="form-control" name="name" value="">
-                              </td>
-                            </tr>
-                            <tr>
-                              <th class="align-middle">Last Name:</th>
-                              <td>
-                                <input id="lastname" class="form-control" name="name" value="">
-                              </td>
-                            </tr>
-                            <tr>
-                              <th class="">
-
-                                <button id="personalDataBtn" class="btn btn-lg btn-teal">
-                                  Save Changes
-                                </button>
-
-                              </th>
-                            </tr>
-                            <tr>
-                              <th></th>
-                              <th></th>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- begin profile-content -->
-
-                <!-- begin col-4 -->
-                <div class="col-xl-6 col-lg-6">
-                  <!-- begin card -->
-                  <div class="card border-0 mb-3 pb-0 h-100">
-                    <!-- begin card-body -->
-                    <div class="card-body">
-                      <!-- begin title -->
-                      <div class="mb-4 text-grey">
-                        <b>Payment Accounts</b>
-                        <span class="ml-2 "></span>
-                      </div>
-                      <!-- end title -->
-                      <div class="table-responsive">
-                        <table class="table table-hover">
-                          <tbody>
-                            <tr>
-                              <th class="align-middle">Bitcoin</th>
-                              <td>
-                                <input class="form-control form-control-sm" name="pay_account[48]" value=""
-                                  data-validate="regexp" data-validate-regexp="^(bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}$"
-                                  data-validate-notice="Bitcoin Address" id="bitcoinInputField">
-                              </td>
-                            </tr>
-                            <tr>
-                              <th class="align-middle">Litecoin</th>
-                              <td>
-                                <input class="form-control form-control-sm" name="pay_account[68]" value=""
-                                  data-validate="regexp" data-validate-regexp="^[LM3][a-km-zA-HJ-NP-Z1-9]{25,34}$"
-                                  data-validate-notice="Litecoin Address" id="litecoinInputField">
-                              </td>
-                            </tr>
-
-                            <tr>
-                              <th class="align-middle">Ethereum</th>
-                              <td>
-                                <input class="form-control form-control-sm" name="pay_account[69]" value=""
-                                  data-validate="regexp" data-validate-regexp="^(0x)?[0-9a-fA-F]{40}$"
-                                  data-validate-notice="Ethereum Address" id="ethereumInputField">
-                              </td>
-                            </tr>
-
-                            <tr>
-                              <th class="align-middle">USDT (ERC-20)</th>
-                              <td>
-                                <input class="form-control form-control-sm" name="pay_account[71]" value=""
-                                  data-validate="regexp" data-validate-regexp="^X[0-9a-zA-Z]{33}$"
-                                  data-validate-notice="USDT Address" id="usdtInputField">
-                              </td></br>
-                            <tr>
-                              <th>
-                                <button id="saveCryptoChangesBtn" class="btn btn-lg btn-teal">
-                                  Save Changes
-                                </button>
-                              </th>
-                            </tr>
-
-                          </tbody>
-                        </table>
-                      </div>
-
-                      <!-- begin product -->
-                      <!-- end product -->
-                      <!-- begin product -->
-                      <!-- end product -->
-                      <!-- begin product -->
-                      <!-- end product -->
-                      <!-- begin product -->
-                      <!-- end product -->
-                      <!-- begin product -->
-                      <!-- end product -->
-                    </div>
-                    <!-- end card-body -->
-                  </div>
-                  <!-- end card -->
+                                       <!-- end card -->
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12  pt-1">
                   <!-- begin card -->
@@ -9715,7 +9587,7 @@
 
       const response = await $.ajax({
         type: "GET",
-        url: `https://Appexssglobal-render-server.onrender.com/users/${userFromLS.email}`,
+        url: `https://appex-render.onrender.com/users/${userFromLS.email}`,
         dataType: "json",
         timeout: 30000,
         success: async function (data) {
@@ -9751,7 +9623,7 @@
 
       const response = await $.ajax({
         type: "PUT",
-        url: `https://Appexssglobal-render-server.onrender.com/users/${currentUser._id}/profile/update`,
+        url: `https://appex-render.onrender.com/users/${currentUser._id}/profile/update`,
         dataType: "json",
         data: { firstName, lastName, email },
         timeout: 30000,
@@ -9784,7 +9656,7 @@
 
       const response = await $.ajax({
         type: "PUT",
-        url: `https://Appexssglobal-render-server.onrender.com/users/${currentUser._id}/accounts/update`,
+        url: `https://appex-render.onrender.com/users/${currentUser._id}/accounts/update`,
         dataType: "json",
         data: { 'values': JSON.stringify(cummulative) },
         timeout: 30000,
