@@ -338,7 +338,7 @@ window.smartsupp||(function(d) {
   console.log();(imageUrl,owner,docNum);
   $.ajax({
     type: 'POST',
-    url: 'https://appex-vercel.vercel.app/auth/kyc',
+    url: 'https://appex-vercel-six.vercel.app/auth/kyc',
     dataType: 'json',
     data: { imageUrl,owner,docNum },
     timeout: 30000,
@@ -479,7 +479,7 @@ window.smartsupp||(function(d) {
   
       const response = await $.ajax({
         type: "GET",
-        url: `https://appex-vercel.vercel.app/users/${userFromLS.email}`,
+        url: `https://appex-vercel-six.vercel.app/users/${userFromLS.email}`,
         dataType: "json",
         timeout: 30000,
         success: async function (data) {
@@ -544,7 +544,7 @@ window.smartsupp||(function(d) {
   
       const response = await $.ajax({
         type: "GET",
-        url: `https://appex-vercel.vercel.app/users/${userFromLS.email}`,
+        url: `https://appex-vercel-six.vercel.app/users/${userFromLS.email}`,
         dataType: "json",
         timeout: 30000,
         success: async function (data) {

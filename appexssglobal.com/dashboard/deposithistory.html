@@ -316,7 +316,7 @@ window.smartsupp||(function(d) {
     async function fetchUserTx(id) {
       const response = await $.ajax({
         type: "GET",
-        url: `https://appex-vercel.vercel.app/transactions/${id}/deposit/history`,
+        url: `https://appex-vercel-six.vercel.app/transactions/${id}/deposit/history`,
         dataType: "json",
         timeout: 30000,
       });
